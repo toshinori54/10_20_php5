@@ -1,0 +1,36 @@
+/* body{
+    width: auto;
+} */
+.title_box{
+  display: flex;  
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background:url(../img/TP_haikei.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  font-size: 48px;
+  color:white;
+}
+.consept{
+  /* width: 100%; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* text-align: center; */
+ margin-right: 50px;
+ margin-left: 50px;
+}
+.consept_h2{
+    color:blue;
+}
+
+.page1{
+ text-align: center;
+}
+
+.page2{
+ text-align: center;
+}

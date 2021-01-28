@@ -1,0 +1,33 @@
+body{
+    width: auto;
+    padding: 20px;
+    
+}
+
+.form{
+  display: flex;  
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background:url(../img/input_back.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  font-size: 24px;
+  color:white;
+}
+
+.input_form{
+  align-items: stretch;
+  width: 200px;
+}
+
+/* #textarea{
+  resize: none;
+  width:300px;
+ height: 100px; 
+} */
+
+.date-edit{
+  position: relative;
+}
