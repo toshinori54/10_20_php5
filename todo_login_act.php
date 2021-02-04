@@ -41,6 +41,6 @@ if (!$val) {
     $_SESSION["is_admin"] = $val["is_admin"];
     $_SESSION["username"] = $val["username"];
     $_SESSION["id"] = $val["id"];
-    header("Location:todo_read.php");
+    header("Location:kanri_input.php");
     exit();
 }

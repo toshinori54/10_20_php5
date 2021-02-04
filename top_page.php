@@ -1,16 +1,29 @@
 <!DOCTYPE html>
 <html lang="ja">
 
+
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> トップページ</title>
     <link rel="stylesheet" href="css/main.css">
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
 
 </head>
 
+<!-- バーガーメニュー -->
+<header>
+    <div class="hamburger-menu">
+        <input type="checkbox" id="menu-btn-check">
+        <label for="menu-btn-check" class="menu-btn"><span></span></label>
+    </div>
+</header>
+
+
 <body>
+
+
     <div class="title_box">
         <h1>私があなたを癒します</h1>
         <p>整体</p>
@@ -28,8 +41,11 @@
         <a href="seitai_input.php">ご予約フォームへ</a>
     </div>
     <div class="page2">
-        <a href="seitai_input.php">会員専用ページ</a>
+        <a href="todo_login.php">管理者専用</a>
     </div>
+
+
+
 </body>
 
 

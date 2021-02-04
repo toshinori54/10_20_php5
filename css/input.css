@@ -20,6 +20,8 @@ body{
 .input_form{
   align-items: stretch;
   width: 200px;
+  color:yellow;
+  
 }
 
 /* #textarea{
@@ -31,3 +33,7 @@ body{
 .date-edit{
   position: relative;
 }
+
+   /* .container {
+            background-color: #f99;
+        } */

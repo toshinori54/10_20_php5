@@ -47,8 +47,10 @@ if ($status == false) {
 
         $output .= "<td><a href='like_create.php?user_id={$user_id}&todo_id={$record["id"]}'>いいね{$record["cnt"]}</a></td>";
         $output .= "<td><a href='todo_edit.php?id={$record["id"]}'>edit</a></td>";
-        $output .= "<td><a href='todo_gazou.php?id={$record["id"]}'>画像</a></td>";
+        // $output .= "<td><a href='todo_gazou.php?id={$record["id"]}'>画像</a></td>";
         $output .= "<td><a href='todo_delete.php?id={$record["id"]}'>delete</a></td>";
+        // 画像出力を追加しよう
+        $output .= "<td><img src='{$record["image"]}' height=150px></td>";
         $output .= "</tr>";
     }
     // $valueの参照を解除する．解除しないと，再度foreachした場合に最初からループしない
@@ -64,6 +66,7 @@ if ($status == false) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
+
     <!-- お試しいいねボタン用 -->
     <!-- <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet"> -->
     <title>DB連携型予約者リスト（一覧画面）</title>
@@ -72,15 +75,19 @@ if ($status == false) {
 <body>
     <fieldset>
         <legend>DB連携型予約者リスト（一覧画面）</legend>
-        <a href="seitai_input.php">入力画面</a>
+        <a href="kanri_input.php">入力画面</a>
         <a href="todo_logout.php">logout</a>
         <table>
             <thead>
                 <tr>
-                    <th>name</th>
-                    <th>☎</th>
-                    <th>reservation</th>
-                    <th>request</th>
+                    <th>名前</th>
+                    <th>連絡先</th>
+                    <th>予約希望美</th>
+                    <th>要望</th>
+                    <th> </th>
+                    <th>修正</th>
+                    <th>削除</th>
+                    <th>問診表</th>
                 </tr>
             </thead>
             <tbody>

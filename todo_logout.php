@@ -14,5 +14,5 @@ if (isset($_COOKIE[session_name()])) { //session_name()は、セッションID�
 session_destroy();
 
 // 処理後、index.phpへリダイレクト
-header('Location:todo_login.php');
+header('Location:top_page.php');
 exit();
